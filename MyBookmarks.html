@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMark - Manager</title>
+    <!-- <link> Link a css or JS file </link> -->
+    <link rel="stylesheet" href="STYLES.css">
+    <link rel="script" href="script.js">
+</head>
+<body>
+    <!-- Self-Closing Tags, Utility-Based Tags. -->
+    <h1>MyBookMarks - Mohammed Fawzaan</h1>
+    <h2>Open Google</h2>
+    <!-- <a>Anchor tag<a/> -->
+    <!-- href used to add a click link -->
+    <a target="_blank" href="https://www.google.com">GOOGLE</a>
+    <h2>Open Amazon</h2>
+    <a target="_blank" href="https://amazon.in">AMAZON</a>
+    <h2>Open INSTAGRAM</h2>
+    <a target="_blank" href="https://instagram.com">INSTAGRAM</a>
+    <h2>Open Facebook</h2>
+    <a target="_blank" href="https://facebook.com">Facebook</a> <br>
+    <h2>Open Youtube</h2>
+    <a target="_blank" href="https://youtube.com">Youtube</a> <br>
+    <h2>Open whatsapp</h2>
+    <a target="_blank" href="https://whatsapp.com">whatsapp</a> <br>
+    <h2>Open playstore</h2>
+    <a target="_blank" href="https://playstore.com">Playstore</a>
+    <h2>Open Netflix</h2>
+    <a target="_blank" href="https://Netflix.com">Netflix</a>
+    <hr>
+    <!-- <img src="" alt=""> used to add a image followed by a src and alternative name -->
+    <h1>My Image</h1>
+    <img src="My Photo.jpg" alt="Fawzaan" height="500">
+    <h1>Tables in html</h1>
+    <table>
+        <caption><b>DETAILS</b></caption>
+        <!-- <tr> is table row -->
+        <thead>
+            <tr>
+                <!-- <th> is table heading -->
+                <th colspan="1">Name</th>
+                <th rowspan="1">age</th>
+                <th>Passion</th>
+                <th>Fav Language</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+               <!-- <td> is table data -->
+               <td rowspan="1">Fawzaan</td>
+               <td rowspan="1">18</td>
+               <td>Programming</td>
+               <td>JAVA</td>
+            </tr>
+        </tbody>
+        <tfoot>
+        </tfoot>
+    </table>
+    <hr>
+    <h1>List in html</h1>
+    <ul>  
+        <li>Mango</li>
+        <li>Orange</li>
+        <li>Apple</li>
+    </ul>
+    <ol type="A">
+        <li>Mango</li>
+        <li>Orange</li>
+        <li>Apple</li>
+    </ol>
+    <dl>
+        <dt>Html</dt>
+        <dd>Hyper text markup lang to create web pages</dd>
+        <dt>CSS</dt>
+        <dd>Case cadding style sheets</dd>
+        <dt>JS</dt>
+        <dd>JavaScript Most popular Language</dd>
+    </dl>
+    <hr>
+    <h1>Forms & input tag in html</h1>
+    <!-- form tag - 
+        input tags : type, name, placeholder, id, value are attributes of input tag.
+        label : Displaying beside input tag ie label.
+    -->
+    <!-- HTML Input Types
+    Input types in HTML forms are the backbone of interactive web   applications. They allow users to send information to web servers for     various purposes like searching, logging in, or providing feedback. In  this blog, we'll explore common HTML input types: text, password, radio,     and checkbox.
+
+    Text Input
+    The text input type is the most basic form of input and is widely used for  collecting simple text data.
+
+    <input type="text" name="username" placeholder="Enter your username">
+    In the above example, the placeholder attribute provides a hint to the  user about what to enter.
+
+    Password Input
+    The password input type is similar to the text type but hides the   characters entered by the user for security reasons.
+
+    <input type="password" name="password" placeholder="Enter your password">
+    Radio Buttons
+    Radio buttons are used when you want the user to select only one option     from a set of choices.
+
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+    Checkbox
+    Checkboxes allow the user to select multiple options from a set.
+
+    <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+    <label for="subscribe">Subscribe to newsletter</label> -->
+    <!-- 
+            HTML Forms
+    HTML forms are essential for collecting user input on web pages. Whether    it's a search bar, a login screen, or a multi-field registration form,     HTML forms play a key role in web interactions. They enable users to    submit data, which can be processed, stored, or returned by a server.
+
+    Why Do We Use Forms?
+    Forms serve as the gateway between the user and the server, allowing for    dynamic, interactive web experiences. They are crucial for tasks such as   user authentication, data submission, feedback collection, and more.  Simply put, forms make websites more engaging and functional.
+
+    HTML Forms Structure:
+    The fundamental structure of an HTML form is encapsulated within the    <form> tags. Inside these tags, you'll place various form controls like    text fields, checkboxes, radio buttons, and buttons for submitting the     form.
+
+     <form action="/submit" method="post">
+         Text input for username 
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br><br>
+
+         Password input
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+
+         Radio buttons for gender
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br><br>
+
+         Submit button 
+        <input type="submit" value="Submit">
+      </form>
+    How to Use Form Controls?
+    The <input> tag is commonly used to create form controls. The attributes    of this tag define the control's behavior.
+
+    <input type="" name="" value="">
+    The "type" attribute specifies the type of input control (e.g., text,   password, checkbox).
+
+    The "name" attribute is used for identifying the control, especially when   the data is sent to the server.
+
+    The "value" attribute sets a default value for the control, which the user  can overwrite
+        -->
+    <form action="post">
+        <div>
+            <label for="username">Enter username : </label>
+            <input type="text"name="username" id="username" placeholder="enter username"> <br>
+            <label for="password">Enter password : </label>
+            <input type="password" name="password" id="password"    placeholder="enter password"> <br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="radio">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="radio">female</label> <br>
+            <input type="checkbox" id="Checkbox" name="Checkbox" value="yes">
+            <label for="subscribe">Confirmation</label>
+        </div>
+        <div>
+            <label for="comment"></label>
+            <textarea name="comment" id="1" cols="25" rows="3" placeholder="Type a comment"></textarea>
+        </div>
+        <div>
+            <select name="Fruits">
+                <option value="Apple">Apple</option>
+                <option value="Mango">Mango</option>
+                <option value="Orange">Orange</option>
+                <option value="Banana">Banana</option>
+            </select>
+        </div>
+    </form>
+    <hr>
+    <h1>Inline and Block elements</h1> <br>
+    Inline elements : Acquire space they need <br>
+    Block elements : Accquire all space
+    div : is block element
+    span : is a inline element
+    <hr>
+    <h1>Quiz</h1>
+    <div>
+        <form action="post">
+            <label for="username">Name : </label>
+            <input type="text" name="username" placeholder="Enter name">
+        </form>
+    </div>
+    <div>
+        <label for="city">City :</label>
+        <select name="City" id="100">
+            <option value="1">Hyderabad</option>
+            <option value="2">Mumbai</option>
+            <option value="3">Delhi</option>
+        </select>
+    </div>
+    <div>
+        <form action="post">
+            <label for="username">Pincode : </label>
+            <input type="text" name="pincode"   placeholder="Enter Pincode">
+        </form>
+    </div>
+    <hr>
+</body>
+</html>
